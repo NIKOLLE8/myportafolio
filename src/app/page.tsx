@@ -2,16 +2,16 @@ import Nav from "@/components/nav";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20   font-[family-name:var(--font-geist-sans)] text-green-500">
-      
-    <main className="flex flex-row w-full row-start-2 h-full items-stretch">
-      <Nav />
-
-      <div className="flex-1 bg-gray-800 rounded-4xl ml-[50px]" />
-
-    </main>
-
-  </div>
+<div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-4 md:p-8 pb-20 font-[family-name:var(--font-geist-sans)] text-green-500">
+      <main className="flex flex-col md:flex-row w-full row-start-2 h-full items-stretch gap-4">
+        {/* En móviles: Nav arriba, cuadrado abajo */}
+        {/* En desktop: Nav a la izquierda, cuadrado a la derecha */}
+        <div className="w-full md:w-auto">
+          <Nav />
+        </div>
+        <div className="flex-1 bg-gray-800 rounded-4xl mt-4 md:mt-0 md:ml-[50px]" />
+      </main>
+    </div>
   
   );
 }
