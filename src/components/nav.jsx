@@ -15,45 +15,45 @@ export default function Botoncito() {
     },
     {
       name: "Software",
-      icon: <Code className="h-9 w-9 text-purple-600" />,
+      icon: <Code className="h-7 w-7 md:h-9 md:w-9 text-purple-600" />,
     },
     {
       name: "Proyectos",
-      icon: <FolderKanban className="h-9 w-9 text-purple-600" />,
+      icon: <FolderKanban className="h-7 w-7 md:h-9 md:w-9 text-purple-600" />,
     },
     {
       name: "Tecnología",
-      icon: <Cpu className="h-9 w-9 text-purple-600" />,
+      icon: <Cpu className="h-7 w-7 md:h-9 md:w-9 text-purple-600" />,
     },
     {
       name: "Contacto",
-      icon: <Wrench className="h-9 w-9 text-purple-600" />,
+      icon: <Wrench className="h-7 w-7 md:h-9 md:w-9 text-purple-600" />,
     },
   ];
 
   return (
-    <nav className="flex flex-row md:flex-col bg-gray-800 border border-purple-900/50 shadow-lg rounded-[30px] backdrop-blur-lg w-full md:h-full p-4 md:p-6">
+    <nav className="flex flex-row md:flex-col bg-gray-800 border border-purple-900/50 shadow-lg rounded-[30px] backdrop-blur-lg w-full md:h-full p-3 md:p-6">
       <div className="flex flex-row md:flex-col w-full justify-between md:justify-center items-center md:space-y-20">
         {navItems.map((item, index) => (
           <div key={index} className="relative group">
             <a
               href="#"
-              className={`flex flex-col md:flex-row items-center justify-center w-20 h-20 rounded-xl p-3 transition-all duration-300 ease-in-out ${
+              className={`flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl p-2 md:p-3 transition-all duration-300 ease-in-out ${
                 activeItem === index
                   ? "scale-110 bg-purple-500/10"
-                  : "group-hover:scale-125"
+                  : "group-hover:scale-110 md:group-hover:scale-125"
               }`}
               onClick={() => setActiveItem(index)}
             >
               <span
                 className={`transition-all duration-300 ${
                   activeItem === index
-                    ? "scale-170"
-                    : "scale-110 group-hover:scale-125"
+                    ? "scale-110 md:scale-170"
+                    : "scale-100 group-hover:scale-110 md:group-hover:scale-125"
                 }`}
               >
                 {item.isImage ? (
-                  <div className="relative w-14 h-14 rounded-xl overflow-hidden shadow-lg shadow-purple-500/50">
+                  <div className="relative w-10 h-10 md:w-14 md:h-14 rounded-xl overflow-hidden shadow-lg shadow-purple-500/50">
                     <img src={item.imgSrc} alt={item.name} />
                   </div>
                 ) : (
@@ -73,28 +73,35 @@ export default function Botoncito() {
               {/* Estrellitas cuando está activo */}
               {activeItem === index && (
                 <>
-                  <span className="absolute -top-2 -right-2 opacity-100 transition-all duration-500 delay-100">
-                    <Sparkle className="h-3 w-3 text-purple-300" />
+                  <span className="absolute -top-1 -right-1 md:-top-2 md:-right-2 opacity-100 transition-all duration-500 delay-100">
+                    <Sparkle className="h-2 w-2 md:h-3 md:w-3 text-purple-300" />
                   </span>
                   <span className="absolute -top-1 left-0 opacity-100 transition-all duration-500 delay-150">
-                    <Sparkle className="h-2 w-2 text-blue-300" />
+                    <Sparkle className="h-1 w-1 md:h-2 md:w-2 text-blue-300" />
                   </span>
-                  <span className="absolute top-1/4 -right-3 opacity-100 transition-all duration-500 delay-200">
-                    <Sparkle className="h-2 w-2 text-cyan-300" />
+                  <span className="absolute top-1/4 -right-2 md:-right-3 opacity-100 transition-all duration-500 delay-200">
+                    <Sparkle className="h-1 w-1 md:h-2 md:w-2 text-cyan-300" />
                   </span>
-                  <span className="absolute bottom-1/3 -left-3 opacity-100 transition-all duration-500 delay-300">
-                    <Sparkle className="h-2 w-2 text-purple-300" />
+                  <span className="absolute bottom-1/3 -left-2 md:-left-3 opacity-100 transition-all duration-500 delay-300">
+                    <Sparkle className="h-1 w-1 md:h-2 md:w-2 text-purple-300" />
                   </span>
-                  <span className="absolute -bottom-2 -right-1 opacity-100 transition-all duration-500 delay-200">
-                    <Sparkle className="h-3 w-3 text-blue-300" />
+                  <span className="absolute -bottom-1 -right-1 md:-bottom-2 md:-right-1 opacity-100 transition-all duration-500 delay-200">
+                    <Sparkle className="h-2 w-2 md:h-3 md:w-3 text-blue-300" />
                   </span>
                 </>
               )}
 
-              {/* Nombre del elemento debajo del icono solo en móviles */}
-              <span className="absolute bottom-0 md:left-16 md:top-auto text-xs text-white bg-gray-900 px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300">
+              {/* Nombre del elemento en desktop */}
+              <span className="hidden md:block absolute left-16 whitespace-nowrap bg-gray-900 text-white px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 text-sm shadow-lg">
                 {item.name}
               </span>
+              
+              {/* Nombre del elemento en móviles - siempre visible debajo del icono para el elemento activo */}
+              {activeItem === index && (
+                <span className="absolute -bottom-5 text-center w-full text-xs text-white md:hidden">
+                  {item.name.length > 8 ? item.name.substring(0, 8) : item.name}
+                </span>
+              )}
             </a>
           </div>
         ))}
