@@ -26,7 +26,7 @@ export default function Botoncito() {
       icon: <Cpu className="h-9 w-9 text-purple-600" />,
     },
     {
-      name: "Habilidades",
+      name: "Contacto",
       icon: <Wrench className="h-9 w-9 text-purple-600" />,
     },
   ];
@@ -38,7 +38,7 @@ export default function Botoncito() {
           <div key={index} className="relative group">
             <a
               href="#"
-              className={`flex items-center justify-center w-20 h-20 rounded-xl p-3 transition-all duration-300 ease-in-out ${
+              className={`flex flex-col md:flex-row items-center justify-center w-20 h-20 rounded-xl p-3 transition-all duration-300 ease-in-out ${
                 activeItem === index
                   ? "scale-110 bg-purple-500/10"
                   : "group-hover:scale-125"
@@ -91,8 +91,8 @@ export default function Botoncito() {
                 </>
               )}
 
-              {/* Nombre del elemento al hacer hover */}
-              <span className="absolute left-16 whitespace-nowrap bg-gray-900 text-white px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 text-sm shadow-lg">
+              {/* Nombre del elemento debajo del icono solo en móviles */}
+              <span className="absolute bottom-0 md:left-16 md:top-auto text-xs text-white bg-gray-900 px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300">
                 {item.name}
               </span>
             </a>
