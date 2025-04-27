@@ -91,17 +91,15 @@ export default function Botoncito() {
                 </>
               )}
 
-              {/* Nombre del elemento en desktop */}
+              {/* Nombre del elemento en desktop - solo visible en hover */}
               <span className="hidden md:block absolute left-16 whitespace-nowrap bg-gray-900 text-white px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 text-sm shadow-lg">
                 {item.name}
               </span>
               
-              {/* Nombre del elemento en móviles - siempre visible debajo del icono para el elemento activo */}
-              {activeItem === index && (
-                <span className="absolute -bottom-5 text-center w-full text-xs text-white md:hidden">
-                  {item.name.length > 8 ? item.name.substring(0, 8) : item.name}
-                </span>
-              )}
+              {/* Nombre del elemento en móviles - solo visible en hover */}
+              <span className="md:hidden absolute -bottom-6 text-center w-full whitespace-nowrap bg-gray-900 text-white px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs shadow-lg">
+                {item.name}
+              </span>
             </a>
           </div>
         ))}
