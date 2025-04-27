@@ -9,7 +9,7 @@ export default function Home() {
         <div className="w-full md:w-auto">
           <Nav />
         </div>
-        <div className="flex-1 bg-gray-800 rounded-4xl mt-4 md:mt-0 md:ml-[50px]" />
+        <div className="flex-1 bg-gray-800 rounded-4xl border border-purple-900/50 mt-4 md:mt-0 md:ml-[50px]" />
       </main>
     </div>
   
