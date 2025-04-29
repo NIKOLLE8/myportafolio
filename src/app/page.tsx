@@ -8,7 +8,7 @@ export default function Home() {
   const [activeItem, setActiveItem] = useState(0)
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-4 md:p-8 pb-20 font-[family-name:var(--font-geist-sans)] text-green-500">
+    <div className="grid min-h-screen p-4 md:p-8 pb-20 font-[family-name:var(--font-geist-sans)] text-green-500">
       <main className="flex flex-col md:flex-row w-full row-start-2 h-full items-stretch gap-4">
         {/* En móviles: Nav arriba, cuadrado abajo */}
         {/* En desktop: Nav a la izquierda, cuadrado a la derecha overflow-hidden h-[600px] md:h-[700px*/}

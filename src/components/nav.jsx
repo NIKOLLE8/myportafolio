@@ -28,7 +28,7 @@ export default function Botoncito({ activeItem, setActiveItem }) {
   ]
 
   return (
-    <nav className="flex flex-row md:flex-col bg-gray-800 border border-purple-900/50 shadow-lg rounded-[30px] backdrop-blur-lg w-full md:w-auto h-auto md:h-full p-3 md:p-6">
+    <nav className="flex flex-row md:flex-col bg-gray-800 border border-purple-900/50 shadow-lg rounded-[30px] backdrop-blur-lg w-full md:w-auto h-auto md:h-full p-2 md:p-4">
       <div className="flex flex-row md:flex-col w-full justify-between md:justify-between items-center h-full">
         {navItems.map((item, index) => (
           <div key={index} className="relative group">
