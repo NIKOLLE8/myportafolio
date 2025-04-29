@@ -53,9 +53,9 @@ return (
         scrollbar-color: rgba(168, 85, 247, 0.6) rgba(128, 90, 213, 0.1);
       }
     `}</style>
-    <div className="h-full w-full overflow-y-auto flex-1 max-h-[calc(100vh-180px)] md:max-h-[calc(100vh-120px)] custom-scrollbar">
-      {renderContent()}
-    </div>
+<div className="h-full w-full overflow-y-auto custom-scrollbar p-4">
+        {renderContent()}
+      </div>
   </>
 )
 }
