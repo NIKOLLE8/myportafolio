@@ -15,7 +15,7 @@ export default function Home() {
         <div className="w-full md:w-auto">
           <Nav activeItem={activeItem} setActiveItem={setActiveItem} />
         </div>
-        <div className="flex-1 bg-gray-800 rounded-4xl border border-purple-900/50 mt-4 md:mt-0 md:ml-[50px] overflow-hidden flex h-[calc(100vh-90px)]">
+        <div className="flex-1 bg-gray-800 rounded-4xl border border-purple-900/50 md:mt-0 md:ml-[50px] overflow-hidden flex h-[calc(100vh-90px)]">
           <ContentContainer activeItem={activeItem} />
         </div>
       </main>
