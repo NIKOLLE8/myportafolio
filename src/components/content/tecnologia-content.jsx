@@ -72,6 +72,11 @@ export default function TecnologiaContent() {
                 <h3 className="text-purple-300 font-medium mb-2">Certificación {index + 1}</h3>
                 <p className="text-gray-300 text-sm">Descripción de la certificación y detalles adicionales.</p>
                 <p className="text-purple-400 text-xs mt-2">Expedido: 2023</p>
+                <p className="text-gray-300 text-sm">Descripción de la certificación y detalles adicionales.</p>
+                <p className="text-purple-400 text-xs mt-2">Expedido: 2023</p>
+                <p className="text-gray-300 text-sm">Descripción de la certificación y detalles adicionales.</p>
+                <p className="text-purple-400 text-xs mt-2">Expedido: 2023</p>                <p className="text-gray-300 text-sm">Descripción de la certificación y detalles adicionales.</p>
+                <p className="text-purple-400 text-xs mt-2">Expedido: 2023</p>
               </div>
             ))}
           </div>

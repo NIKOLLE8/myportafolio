@@ -35,7 +35,7 @@ export default function ProyectosContent() {
   ]
 
   return (
-    <div className="p-6 md:p-8 h-full overflow-auto">
+    <div className="p-6 md:p-8 ">
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">Proyectos</h1>
 
       <div className="space-y-6">

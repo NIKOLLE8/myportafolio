@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { useState } from "react";
 import { Code, FolderKanban, Cpu, Wrench, Sparkle } from "lucide-react";
 
 export default function Botoncito({ activeItem, setActiveItem }) {
@@ -29,27 +28,31 @@ export default function Botoncito({ activeItem, setActiveItem }) {
   ]
 
   return (
-    <nav className="flex flex-row md:flex-col bg-gray-800 border border-purple-900/50 shadow-lg rounded-[30px] backdrop-blur-lg w-full md:h-full p-3 md:p-6">
-      <div className="flex flex-row md:flex-col w-full justify-between md:justify-center items-center md:space-y-20">
+    <nav className="flex flex-row md:flex-col bg-gray-800 border border-purple-900/50 shadow-lg rounded-[30px] backdrop-blur-lg w-full md:w-auto h-auto md:h-full p-3 md:p-6">
+      <div className="flex flex-row md:flex-col w-full justify-between md:justify-between items-center h-full">
         {navItems.map((item, index) => (
           <div key={index} className="relative group">
             <a
               href="#"
               className={`flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl p-2 md:p-3 transition-all duration-300 ease-in-out ${
-                activeItem === index ? "scale-110 bg-purple-500/10" : "group-hover:scale-110 md:group-hover:scale-125"
+                activeItem === index ? "scale-100 bg-purple-500/10" : "group-hover:scale-100 md:group-hover:scale-110"
               }`}
               onClick={() => setActiveItem(index)}
             >
               <span
                 className={`transition-all duration-300 ${
                   activeItem === index
-                    ? "scale-110 md:scale-170"
-                    : "scale-100 group-hover:scale-110 md:group-hover:scale-125"
+                    ? "scale-110 md:scale-120"
+                    : "scale-100 group-hover:scale-130 md:group-hover:scale-125"
                 }`}
               >
                 {item.isImage ? (
                   <div className="relative w-10 h-10 md:w-14 md:h-14 rounded-xl overflow-hidden shadow-lg shadow-purple-500/50">
-                    <img src={item.imgSrc || "/placeholder.svg"} alt={item.name} />
+                    <img
+                      src={item.imgSrc || "/placeholder.svg"}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 ) : (
                   item.icon
