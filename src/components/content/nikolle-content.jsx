@@ -64,7 +64,7 @@ export default function NikolleContent() {
                 </div>
                 <div className="hobby-card bg-gradient-to-br from-purple-800/40 to-purple-600/20 p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-purple-500/20">
                   <div className="text-4xl mb-2">🛠</div>
-                  <div className="text-lg font-medium text-purple-200 break-words">Proyectos Personales</div>
+                  <div className="text-lg font-medium text-purple-200 break-words">Proyectos</div>
                 </div>
                 <div className="hobby-card bg-gradient-to-br from-purple-800/40 to-purple-600/20 p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-purple-500/20">
                   <div className="text-4xl mb-2">💃</div>
