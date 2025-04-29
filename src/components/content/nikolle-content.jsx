@@ -23,10 +23,18 @@ export default function NikolleContent() {
           {/* Perfil profesional */}
           <div className="bg-gray-800/40 p-5 rounded-xl backdrop-blur-sm border border-purple-500/20 mb-6 w-full">
             <h2 className="text-xl font-medium mb-2 text-purple-200 text-justify">
-              Soy estudiante de Ingeniería de Software apasionada por el desarrollo web, Front-end, y Cloud Computing. Mi enfoque está en crear soluciones tecnológicas innovadoras, adaptándome rápidamente a nuevos desafíos y trabajando colaborativamente para alcanzar objetivos compartidos.
+              Soy estudiante de Ingeniería de Software apasionada por el
+              desarrollo web, Front-end, y Cloud Computing. Mi enfoque está en
+              crear soluciones tecnológicas innovadoras, adaptándome rápidamente
+              a nuevos desafíos y trabajando colaborativamente para alcanzar
+              objetivos compartidos.
             </h2>
             <h2 className="text-xl font-medium mb-2 text-purple-200 text-justify">
-              Soy una persona que ama a los animales, especialmente a los gatos y perros, y uno de mis sueños es poder adoptar uno en el futuro. También tengo muchas ganas de viajar y explorar nuevos lugares, para conocer diferentes culturas y enriquecerme con nuevas experiencias.
+              Soy una persona que ama a los animales, especialmente a los gatos
+              y perros, y uno de mis sueños es poder adoptar uno en el futuro.
+              También tengo muchas ganas de viajar y explorar nuevos lugares,
+              para conocer diferentes culturas y enriquecerme con nuevas
+              experiencias.
             </h2>
           </div>
 
@@ -39,10 +47,14 @@ export default function NikolleContent() {
               <span className="text-purple-200 font-medium">📍 Rímac</span>
             </div>
             <div className="bg-purple-500/20 px-6 py-3 rounded-full backdrop-blur-sm border border-purple-400/30">
-              <span className="text-purple-200 font-medium break-words">🐈 Gatolover</span>
+              <span className="text-purple-200 font-medium break-words">
+                🐈 Gatolover
+              </span>
             </div>
             <div className="bg-purple-500/20 px-6 py-3 rounded-full backdrop-blur-sm border border-purple-400/30">
-              <span className="text-purple-200 font-medium break-words">💜 방탄소년단</span>
+              <span className="text-purple-200 font-medium break-words">
+                💜 방탄소년단
+              </span>
             </div>
           </div>
         </div>
@@ -51,54 +63,67 @@ export default function NikolleContent() {
         <div className="w-full md:w-1/2 order-2">
           {/* Hobbies */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-6 text-center text-purple-300">Mis Hobbies</h2>
+            <h2 className="text-2xl font-bold mb-6 text-center text-white">
+              Mis Hobbies
+            </h2>
             <div className="bg-gray-800/30 p-6 rounded-2xl backdrop-blur-sm border border-purple-500/30">
               <div className="grid grid-cols-2 gap-4">
                 <div className="hobby-card bg-gradient-to-br from-purple-800/40 to-purple-600/20 p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-purple-500/20">
                   <div className="text-4xl mb-2">📺</div>
-                  <div className="text-lg font-medium text-purple-200 break-words">Ver anime</div>
+                  <div className="text-lg font-medium text-purple-200 break-words">
+                    Ver anime
+                  </div>
                 </div>
                 <div className="hobby-card bg-gradient-to-br from-purple-800/40 to-purple-600/20 p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-purple-500/20">
                   <div className="text-4xl mb-2">🎧</div>
-                  <div className="text-lg font-medium text-purple-200 break-words">Escuchar música</div>
+                  <div className="text-lg font-medium text-purple-200 break-words">
+                    Escuchar música
+                  </div>
                 </div>
                 <div className="hobby-card bg-gradient-to-br from-purple-800/40 to-purple-600/20 p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-purple-500/20">
                   <div className="text-4xl mb-2">🛠</div>
-                  <div className="text-lg font-medium text-purple-200 break-words">Proyectos</div>
+                  <div className="text-lg font-medium text-purple-200 break-words">
+                    Proyectos
+                  </div>
                 </div>
                 <div className="hobby-card bg-gradient-to-br from-purple-800/40 to-purple-600/20 p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-purple-500/20">
                   <div className="text-4xl mb-2">💃</div>
-                  <div className="text-lg font-medium text-purple-200 break-words">Bailar</div>
+                  <div className="text-lg font-medium text-purple-200 break-words">
+                    Bailar
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Gustos */}
-<div>
-  <h2 className="text-2xl font-bold mb-6 text-center text-purple-300">Mis Gustos</h2>
-  <div className="bg-gray-800/30 p-6 rounded-2xl backdrop-blur-sm border border-purple-500/30">
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {[
-        ['💜', 'BTS'],
-        ['🎤', 'Kpop'],
-        ['🍥', 'Anime'],
-        ['📖', 'Manhwas'],
-        ['🎬', 'Cine '],
-        ['✈️', 'Viajar'],
-      ].map(([emoji, text], idx) => (
-        <div
-          key={idx}
-          className="taste-pill bg-purple-700/30 px-4 py-3 rounded-xl flex flex-wrap items-center gap-3 hover:bg-purple-600/40 transition-colors duration-300 border border-purple-500/20 min-w-0"
-        >
-          <span className="text-2xl">{emoji}</span>
-          <span className="text-purple-100 font-medium break-words">{text}</span>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-
+          <div>
+            <h2 className="text-2xl font-bold mb-6 text-center text-white">
+              Mis Gustos
+            </h2>
+            <div className="bg-gray-800/30 p-6 rounded-2xl backdrop-blur-sm border border-purple-500/30">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  ["💜", "BTS"],
+                  ["🎤", "Kpop"],
+                  ["🍥", "Anime"],
+                  ["📖", "Manhwas"],
+                  ["🎬", "Cine "],
+                  ["✈️", "Viajar"],
+                ].map(([emoji, text], idx) => (
+                  <div
+                    key={idx}
+                    className="taste-pill bg-purple-700/30 px-4 py-3 rounded-xl flex flex-wrap items-center gap-3 hover:bg-purple-600/40 transition-colors duration-300 border border-purple-500/20 min-w-0"
+                  >
+                    <span className="text-2xl">{emoji}</span>
+                    <span className="text-purple-100 font-medium break-words">
+                      {text}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
