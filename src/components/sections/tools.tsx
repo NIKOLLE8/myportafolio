@@ -221,7 +221,6 @@ export default function ToolsSection() {
                   {/* Skill name and level (siempre visible) */}
                   <div className="absolute top-full mt-5 left-1/2 transform -translate-x-1/2 bg-purple-900/90 px-3 py-2 rounded-lg text-center whitespace-nowrap z-10 border border-purple-500/50 shadow-lg w-max">
                     <div className="text-purple-100 font-medium">{skill.name}</div>
-                    <div className="text-purple-300 text-xs mt-1">{getLevelName(skill.level)}</div>
                   </div>
                 </motion.div>
               </div>
