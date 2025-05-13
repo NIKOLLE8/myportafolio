@@ -35,17 +35,10 @@ export default function AboutSection() {
             Nikolle Yamelí Acuña Javier
           </h2>
           <p className="text-purple-100 mb-4 text-justify">
-            Soy estudiante de Ingeniería de Software apasionada por el
-            desarrollo web, Back-end, y Cloud Computing. Mi enfoque está en
-            crear soluciones tecnológicas innovadoras, adaptándome rápidamente a
-            nuevos desafíos y trabajando colaborativamente para alcanzar
-            objetivos compartidos.
+          Soy estudiante de Ingeniería de Software, apasionada por el desarrollo web, el back-end y el cloud computing. Mi enfoque se centra en ayudar a crear soluciones tecnológicas, adaptándome rápidamente a nuevos desafíos y trabajando de manera colaborativa para alcanzar objetivos comunes.
           </p>
           <p className="text-purple-100 mb-4 text-justify">
-            Soy una persona que ama a los animales, especialmente a los gatos y
-            perros, y uno de mis sueños es poder adoptar uno en el futuro.
-            También tengo muchas ganas de viajar y explorar nuevos lugares, para
-            conocer diferentes culturas y enriquecerme con nuevas experiencias.
+       Me interesa explorar nuevos lugares y conocer diversas culturas para ampliar mi perspectiva global y enriquecer mi capacidad de adaptación y resolución de problemas en entornos diversos.
           </p>
           <div className="flex flex-wrap gap-2 ">
             <Badge
