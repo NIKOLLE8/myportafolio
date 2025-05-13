@@ -45,7 +45,7 @@ export default function ProjectsSection() {
     {
       title: "Whale Studio",
       description: "Es una plataforma web que optimiza la gestión de reservas para salas de espejo, mostrando disponibilidad en tiempo real y permitiendo reservas personalizadas. Incluye un dashboard para administradores y soporte multilingüe mediante i18n.",
-      image: "/img/Projects/WhaleStudio.PNG",
+      image: "/img/Projects/WhaleStudio.png",
       tags: ["Java", "Html", "CSS", "Javascript", "MySQL", "Java Servlet", "GlassFish"],
       demoUrl: "",
       repoUrl: "https://github.com/NIKOLLE8/Whale_Studio",
@@ -53,7 +53,7 @@ export default function ProjectsSection() {
     {
       title: "MythoLabs",
       description: "Es una plataforma de cursos en línea con suscripciones mensuales y anuales, los usuarios pueden acceder a una variedad de contenidos educativos, gestionar su perfil y personalizar su experiencia de aprendizaje.",
-      image: "/img/Projects/MythoLabs.PNG",
+      image: "/img/Projects/MythoLabs.png",
       tags: ["Html", "CSS", "MySQL", "PHP", "JavaScript"],
       demoUrl: "#",
       repoUrl: "#",
