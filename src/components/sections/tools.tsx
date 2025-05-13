@@ -48,6 +48,8 @@ export default function ToolsSection() {
     { name: "Angular", icon: "devicon-angularjs-plain", color: "#DD0031", category: "frontend", level: 1 },
     { name: "CSS3", icon: "devicon-css3-plain", color: "#1572B6", category: "frontend", level: 2 },
     { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain", color: "#38B2AC", category: "frontend", level: 2 },
+    { name: "Next.js", icon: "devicon-nextjs-plain", color: "#000000", category: "frontend", level: 2 },
+
 
     // Backend
     { name: "Python", icon: "devicon-python-plain", color: "#3776AB", category: "backend", level: 2 },
